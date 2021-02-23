@@ -1,0 +1,60 @@
+.carrousel-component {
+	z-index: -1;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0 15px;
+}
+
+.carrousel-component__cover {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 1293px;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('/img/home-slider.png');
+	border-radius: 16px;
+	box-sizing: border-box;
+}
+
+.carrousel-component__stepper {
+	position: absolute;
+	top: 140px;
+	display: flex;
+	justify-content: center;
+	column-gap: 4px;
+	width: 100%;
+}
+
+.carrousel-component__stepper_dot,
+.carrousel-component__stepper_dot--active {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carrousel-component__stepper_dot--active {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 370px) {
+	.carrousel-component__cover {
+		height: 160px;
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.carrousel-component__cover {
+		height: 300px;
+	}
+
+	.carrousel-component__stepper {
+		top: 265px;
+	}
+}

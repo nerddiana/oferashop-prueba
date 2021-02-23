@@ -1,0 +1,31 @@
+.value-offers-component {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.value-offers-component__image {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.value-offers-component__image--mobile {
+	display: inherit;
+}
+
+.value-offers-component__image--desktop {
+	display: none;
+}
+
+@media screen and (min-width: 760px) {
+	.value-offers-component__image--mobile {
+		display: none;
+	}
+
+	.value-offers-component__image--desktop {
+		display: flex;
+	}	
+}

@@ -1,0 +1,38 @@
+.component {
+	/* border: 1px solid red; */
+	box-sizing: border-box;
+}
+
+.only-mobile {
+	display: inherit;
+}
+
+.only-desktop, .hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+* {
+	font-family: 'Galano Grotesque';
+	font-size: 13px;
+}
+
+.icon-btn {
+	display: inline-flex;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+@media screen and (min-width: 760px) {
+	.only-mobile {
+		display: none;
+	}
+
+	.only-desktop {
+		display: inherit;
+	}
+}

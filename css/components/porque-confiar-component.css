@@ -1,0 +1,39 @@
+.porque-confiar-component {
+	margin: 48px 0;
+}
+
+.porque-confiar-component h3 {
+	font-family: 'Galano Grotesque Bold';
+	font-size: 24px;
+	color: var(--color-morado);
+	margin-bottom: 24px;
+}
+
+.porque-confiar-component__group-list h4 {
+	margin-top: 24px;
+	font-size: 18px;
+}
+
+.porque-confiar-component__group-list ul {
+	margin: 16px;
+	font-size: 14px;
+}
+
+.porque-confiar-component__group-list ul li {
+	margin-left: 32px;
+	list-style-image: url('/icon/akar-icons_shield.svg');
+}
+
+@media screen and (min-width: 980px) {
+	.porque-confiar-component h3 {
+		font-size: 36px;
+	}
+
+	.porque-confiar-component__group-list h4 {
+		font-size: 24px;
+	}
+
+	.porque-confiar-component__group-list ul {
+		font-size: 18px;
+	}
+}

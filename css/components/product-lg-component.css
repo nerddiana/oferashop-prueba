@@ -1,0 +1,96 @@
+.product-lg-component {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	border-radius: 16px;
+	border: 1px solid var(--color-gris-claro);
+	box-sizing: border-box;
+}
+
+.product-lg-component:hover {
+	box-shadow: 0 0 16px var(--color-gris-claro);
+}
+
+.product-lg-component.only-desktop {
+	display: none;
+}
+
+.product-lg-component__image {
+	display: block;
+	width: 100%;
+	padding: 25px 25px 0 25px;
+	border-radius: 16px 16px 0 0;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.product-lg-component__image img {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.product-lg-component__content {
+	padding: 4px 25px 25px 25px;
+	border-radius: 0 0 16px 16px;
+	font-size: 18px;
+}
+
+.product-lg-component__content h3 {
+	margin-top: 8px;
+	font-size: 18px;
+	font-family: 'Galano Grotesque Bold';
+	color: var(--color-gris);
+}
+
+.product-lg-component__rating {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 16px;
+	padding: 4px 0;
+}
+
+.product-lg-component__rating__count {
+	font-size: 12px;
+}
+
+.product-lg-component__price__last {
+	color: var(--color-rojo);
+}
+
+.product-lg-component__price__current {
+	padding: 8px 0;
+	font-family: 'Galano Grotesque SemiBold';
+	font-size: 36px;
+	color: var(--color-morado);
+}
+
+.product-lg-component__add-to-cart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 8px 24px;
+	font-family: 'Galano Grotesque Bold';
+	font-size: 18px;
+	color: var(--color-morado);
+	/* border: 1px solid var(--color-morado); */
+	border: 2px solid var(--color-gris-claro);
+	background-color: white;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.product-lg-component__add-to-cart:hover {
+	background-color: var(--color-gris-claro);
+}
+
+.product-lg-component__add-to-cart:active {
+	color: var(--color-morado);
+	border: 2px solid var(--color-morado);
+}
+
+.product-lg-component__add-to-cart img {
+	height: 32px;
+}

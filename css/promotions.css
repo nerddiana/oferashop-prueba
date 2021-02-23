@@ -1,0 +1,30 @@
+@import 'components/product-lg-component.css';
+
+#promotions {
+	padding: 0 24px;
+	margin: 0 auto;
+	max-width: 1293px;
+	box-sizing: border-box;
+}
+
+.products-component {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-column-gap: 32px;
+	grid-row-gap: 24px;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 760px) {
+	.products-component {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.products-component {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+}

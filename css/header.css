@@ -1,0 +1,87 @@
+@import 'components/location-component.css';
+@import 'components/cart-component.css';
+@import 'components/search-component.css';
+@import 'components/main-menu-component.css';
+
+header {
+	z-index: 1000;
+	display: block;
+	position: fixed;
+	width: 100%;
+	color: white;
+	padding: 16px 24px 0 24px;
+	background-color: var(--color-morado);
+}
+
+/* header img {
+	max-width: 32px;
+	height: 32px;
+} */
+
+.group-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.user-tasks-group {
+	display: flex;
+	align-items: flex-end;
+	column-gap: 16px;
+}
+
+.user-tasks-subgroup {
+	display: flex;
+	align-items: flex-end;
+	column-gap: 10px;
+}
+
+.header-curve {
+	position: fixed;
+	margin-top: 102px;
+}
+
+.header-curve.alt {
+	right: 0;
+	transform: scaleX(-1);
+}
+
+.header-spacer {
+	display: block;
+	width: 100%;
+	height: 106px;
+}
+
+.only-mobile {
+	display: inherit;
+}
+
+.only-desktop, .hidden, .subgroup-1, #brand-logo {
+	display: none;
+}
+
+@media screen and (min-width: 760px) {
+	.only-mobile {
+		display: none;
+	}
+
+	.only-desktop, .subgroup-1 {
+		display: flex;
+	}
+
+	#brand-logo {
+		display: inherit;
+	}
+
+	.header-spacer {
+		height: 140px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.user-tasks-group {
+		display: flex;
+		justify-content: flex-end;
+		width: 300px;
+	}
+}

@@ -1,0 +1,124 @@
+.product-md-component {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	border-radius: 16px;
+	border: 1px solid var(--color-gris-claro);
+	box-sizing: border-box;
+}
+
+.product-md-component:hover {
+	box-shadow: 0 0 16px var(--color-gris-claro);
+}
+
+.product-md-component.only-desktop {
+	display: none;
+}
+
+.product-md-component__image {
+	display: block;
+	width: 100%;
+	padding: 8px;
+	padding-top: 16px;
+	padding-bottom: 0px;
+	border-radius: 16px 16px 0 0;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.product-md-component__image img {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.product-md-component__content {
+	padding: 8px;
+	padding-top: 4px;
+	border-radius: 0 0 16px 16px;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+.product-md-component__content h3 {
+	margin-top: 8px;
+	font-size: 12px;
+	font-family: 'Galano Grotesque Bold';
+	color: var(--color-gris);
+}
+
+.product-md-component__rating {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	column-gap: 6px;
+	grid-row-gap: 2px;
+	padding: 4px 0;
+}
+
+.product-md-component__rating__stars {
+	display: inline-flex;
+}
+
+.product-md-component__rating__stars img {
+	width: 14px;
+}
+
+.product-md-component__rating__count {
+	font-size: 10px;
+}
+
+.product-md-component__price__last {
+	color: var(--color-rojo);
+	font-size: 12px;
+}
+
+.product-md-component__price__current {
+	padding: 8px 0;
+	font-family: 'Galano Grotesque SemiBold';
+	font-size: 24px;
+	color: var(--color-morado);
+}
+
+.product-md-component__add-to-cart {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 8px 24px;
+	font-family: 'Galano Grotesque Bold';
+	font-size: 12px;
+	color: var(--color-morado);
+	/* border: 1px solid var(--color-morado); */
+	border: 2px solid var(--color-gris-claro);
+	background-color: white;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.product-md-component__add-to-cart p {
+}
+
+.product-md-component__add-to-cart:hover {
+	background-color: var(--color-gris-claro);
+}
+
+.product-md-component__add-to-cart:active {
+	color: var(--color-morado);
+	border: 2px solid var(--color-morado);
+}
+
+.product-md-component__add-to-cart img {
+	height: 22px;
+}
+
+@media screen and (min-width: 410px) {
+	.product-md-component__image {
+		padding: 25px 25px 0 25px;
+	}
+
+	.product-md-component__content {
+		padding: 4px 25px 25px 25px;
+	}
+}

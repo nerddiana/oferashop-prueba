@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ofera Shop | E-commerce</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+	<svg class="header-curve only-mobile" width="32" height="32" viewBox="0 0 32 32">
+		<path d="M 0, 32 C 0, 16 16, 0 32, 0 L 32, 0 0, 0" fill="var(--color-morado)" />
+	</svg>
+	<svg class="header-curve alt only-mobile" width="32" height="32" viewBox="0 0 32 32">
+		<path d="M 0, 32 C 0, 16 16, 0 32, 0 L 32, 0 0, 0" fill="var(--color-morado)" />
+	</svg>
+	<header class="component">
+		<div class="group-1">
+			<div class="only-desktop subgroup-1">
+				<img id="brand-logo" src="img/logotipo.svg" alt="Logo de Ofera Shop" />
+				<div class="component location-component">
+					<img class="location-component__icon" src="icon/carbon_location.svg" />
+					<div class="component location-dropdown-component">
+						<div id="location-selected-1" class="location-dropdown-component__selected">
+							<p><span>Enviar a </span><span><b>Diana Martínez</b></span><span> C.P. XXXXX</span></p>
+						</div>
+						<div id="location-dropdown-1" class="location-dropdown-component__options-container" role="select">
+							<h4>Selecciona una opción</h4>
+							<ul class="location-dropdown-component__options">
+								<li data-id="1" role="option">
+									<p><span>Diana Martínez</span><span> C.P. XXXXX</span></p>
+								</li>
+								<li data-id="2" role="option">
+									<p><span>Diana Martínez</span><span> C.P. XXXXX</span></p>
+								</li>
+								<li data-id="3" role="option">
+									<p><span>Diana Martínez</span><span> C.P. XXXXX</span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="burger-button" class="icon-btn only-mobile">
+				<img src="icon/cil_hamburger-menu.svg" alt="Botón apra abrir el menú principal" />
+			</button>
+			<div class="component search-component">
+				<form id="search-form" class="search-component__input-search">
+					<input id="search" type="text" maxlength="24" name="search" placeholder="Busca por producto o categoría" autocomplete="off" />
+					<button class="icon-btn"><img src="icon/carbon_search.svg" alt="buscar" role="button" /></button>
+				</form>
+				<ul id="search-history" class="search-component__search-history">
+					<li>
+						Audiotechnica M50x
+					</li>
+					<li>
+						Café en grano 1Kg
+					</li>
+					<li>
+						Silla gamer
+					</li>
+				</ul>
+			</div>
+			<div class="user-tasks-group">
+				<div class="component cart-component">
+					<div id="cart-btn" class="cart-component__button">
+						<img class="cart-component__button__icon" src="icon/ph_shopping-cart-simple_white.svg" alt="carrito de compra" />
+						<span class="cart-component__button__count">3</span>
+					</div>
+					<div id="cart-content" class="cart-component__cart-content">
+						<h3>Carrito de compra</h3>
+						<p>Hay <b class="cart-component__cart-content__count">3</b> productos en tu carrito.</p>
+						<ul class="cart-component__cart-content__items">
+							<li class="cart-item-component">
+								<p class="cart-item-component__label"><b>Audiotechnica M25x</b></p>
+								<div class="cart-item-component__content">
+									<label>
+										<span>Cantidad</span>
+										<input class="cart-item-component__content__count" type="number" min="0" name="items" alt="items" value="1" />
+									</label>
+									<button class="icon-btn cart-item-component__content__remove">
+										<img src="icon/trash.svg" alt="borrar" />
+									</button>
+								</div>
+							</li>
+							<li class="cart-item-component">
+								<p class="cart-item-component__label"><b>Audiotechnica M25x</b></p>
+								<div class="cart-item-component__content">
+									<label>
+										<span>Cantidad</span>
+										<input class="cart-item-component__content__count" type="number" min="0" name="items" alt="items" value="1" />
+									</label>
+									<button class="icon-btn cart-item-component__content__remove">
+										<img src="icon/trash.svg" alt="borrar" />
+									</button>
+								</div>
+							</li>
+							<li class="cart-item-component">
+								<p class="cart-item-component__label"><b>Audiotechnica M25x</b></p>
+								<div class="cart-item-component__content">
+									<label>
+										<span>Cantidad</span>
+										<input class="cart-item-component__content__count" type="number" min="0" name="items" alt="items" value="1" />
+									</label>
+									<button class="icon-btn cart-item-component__content__remove">
+										<img src="icon/trash.svg" alt="borrar" />
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="only-desktop user-tasks-subgroup">
+					<a href="#">
+						<img src="icon/cil_heart_white.svg" alt="favoritos" />
+					</a>
+					<a href="#">
+						<img src="icon/la_user_white.svg" alt="cuenta" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="component location-component only-mobile">
+			<img class="location-component__icon" src="icon/carbon_location.svg" />
+			<div class="component location-dropdown-component">
+				<div id="location-selected-2" class="location-dropdown-component__selected">
+					<p><span>Enviar a </span><span><b>Diana Martínez</b></span><span> C.P. XXXXX</span></p>
+				</div>
+				<div id="location-dropdown-2" class="location-dropdown-component__options-container" role="select">
+					<h4>Selecciona una opción</h4>
+					<ul class="location-dropdown-component__options">
+						<li data-id="1" role="option">
+							<p><span>Diana Martínez</span><span> C.P. XXXXX</span></p>
+						</li>
+						<li data-id="2" role="option">
+							<p><span>Diana Martínez</span><span> C.P. XXXXX</span></p>
+						</li>
+						<li data-id="3" role="option">
+							<p><span>Diana Martínez</span><span> C.P. XXXXX</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-menu-component only-desktop">
+			<ul class="main-menu-component__group">
+				<div class="component left-spacer"></div>
+			</ul>
+			<ul class="main-menu-component__group">
+				<li>
+					<img src="icon/teenyicons_discount-outline_white.svg" alt="Promociones" />
+					<p>Promociones</p>
+				</li>
+				<li>
+					<img src="icon/ph_trend-up-fill_white.svg" alt="Tendencias" />
+					<p>Tendencias</p>
+				</li>
+				<li>
+					<img src="icon/fluent_tag-24-regular_white.svg" alt="Vender" />
+					<p>Vender</p>
+				</li>
+			</ul>
+			<ul class="main-menu-component__group">
+				<li>
+					<img src="icon/ph_headphones_white.svg" alt="Servicio" />
+					<p>Servicio</p>
+				</li>
+				<li>
+					<img src="icon/carbon_help_white.svg" alt="Ayuda" />
+					<p>Ayuda</p>
+				</li>
+			</ul>
+		</div>
+		<div id="cover" class="cover hide"></div>
+		<aside id="main-menu-component" class="component main-menu-component hide only-mobile" aria-hidden="true">
+			<div class="main-menu-component__head">
+				<div class="main-menu-component__head__image">
+					<img src="img/logotipo.svg" alt="Logo de Ofera Shop" />
+				</div>
+				<div class="main-menu-component__head__separator"></div>
+			</div>
+			<nav>
+				<ul class="main-menu-component__group">
+					<li>
+						<img src="icon/akar-icons_home.svg" alt="Inicio" />
+						<p>Inicio</p>
+					</li>
+					<li>
+						<img src="icon/pedidos_cart.svg" alt="Pedidos" />
+						<p>Pedidos</p>
+					</li>
+					<li>
+						<img src="icon/cil_heart.svg" alt="Favoritos" />
+						<p>Favoritos</p>
+					</li>
+					<li>
+						<img src="icon/la_user.svg" alt="Mi cuenta" />
+						<p>Mi cuenta</p>
+					</li>
+				</ul>
+				<ul class="main-menu-component__group">
+					<li>
+						<img src="icon/teenyicons_discount-outline.svg" alt="Promociones" />
+						<p>Promociones</p>
+					</li>
+					<li>
+						<img src="icon/ph_trend-up-fill.svg" alt="Tendencias" />
+						<p>Tendencias</p>
+					</li>
+					<li>
+						<img src="icon/fluent_tag-24-regular.svg" alt="Vender" />
+						<p>Vender</p>
+					</li>
+				</ul>
+				<ul class="main-menu-component__group">
+					<li>
+						<img src="icon/ph_headphones.svg" alt="Servicio" />
+						<p>Servicio</p>
+					</li>
+					<li>
+						<img src="icon/carbon_help.svg" alt="Ayuda" />
+						<p>Ayuda</p>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+	</header>
+	<div class="header-spacer"></div>
+	<main>
+		<section id="value-offers" class="component value-offers-component">
+			<img class="value-offers-component__image value-offers-component__image--mobile" src="icon/promocion.svg">
+			<img class="value-offers-component__image value-offers-component__image--desktop" src="icon/promociones.svg">
+		</section>
+		<section id="carrousel" class="component carrousel-component">
+			<div class="carrousel-component__cover"></div>
+			<div class="carrousel-component__stepper">
+				<div class="carrousel-component__stepper_dot"></div>
+				<div class="carrousel-component__stepper_dot"></div>
+				<div class="carrousel-component__stepper_dot"></div>
+				<div class="carrousel-component__stepper_dot--active"></div>
+				<div class="carrousel-component__stepper_dot"></div>
+				<div class="carrousel-component__stepper_dot"></div>
+			</div>
+		</section>
+		<section id="categories">
+			<div class="section-header">
+				<h3>Categorías</h3>
+				<div class="section-header__right-option">
+					<button class="icon-btn">Ver más</button>
+				</div>
+			</div>
+			<div class="component categories-component">
+				<div class="component category-component">
+					<div class="category-component__image">
+						<img src="img/categoria1.png" alt="Electrónica de consumo" />
+					</div>
+					<div class="category-component__title">Electrónica de consumo</div>
+				</div>
+				<div class="component category-component">
+					<div class="category-component__image">
+						<img src="img/categoria2.png" alt="Alimentos y bebidas" />
+					</div>
+					<div class="category-component__title">Alimentos y bebidas</div>
+				</div>
+				<div class="component category-component">
+					<div class="category-component__image">
+						<img src="img/categoria3.png" alt="Salud y belleza" />
+					</div>
+					<div class="category-component__title">Salud y belleza</div>
+				</div>
+				<div class="component category-component">
+					<div class="category-component__image">
+						<img src="img/categoria4.png" alt="Ropa y accesorios" />
+					</div>
+					<div class="category-component__title">Ropa y accesorios</div>
+				</div>
+				<div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria1.png" alt="Electrónica de consumo" />
+					</div>
+					<div class="category-component__title">Electrónica de consumo</div>
+				</div>
+				<div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria2.png" alt="Alimentos y bebidas" />
+					</div>
+					<div class="category-component__title">Alimentos y bebidas</div>
+				</div>
+				<div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria3.png" alt="Salud y belleza" />
+					</div>
+					<div class="category-component__title">Salud y belleza</div>
+				</div>
+				<div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria4.png" alt="Ropa y accesorios" />
+					</div>
+					<div class="category-component__title">Ropa y accesorios</div>
+				</div>
+				<div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria1.png" alt="Electrónica de consumo" />
+					</div>
+					<div class="category-component__title">Electrónica de consumo</div>
+				</div>
+				<div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria2.png" alt="Alimentos y bebidas" />
+					</div>
+					<div class="category-component__title">Alimentos y bebidas</div>
+				</div>
+				<!--div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria3.png" alt="Salud y belleza" />
+					</div>
+					<div class="category-component__title">Salud y belleza</div>
+				</div>
+				<div class="component category-component only-desktop">
+					<div class="category-component__image">
+						<img src="img/categoria4.png" alt="Ropa y accesorios" />
+					</div>
+					<div class="category-component__title">Ropa y accesorios</div>
+				</div-->
+			</div>
+		</section>
+		<section id="promotions">
+			<div class="section-header">
+				<h3>Promociones</h3>
+				<div class="section-header__right-option"></div>
+			</div>
+			<div class="component products-component">
+				<div class="component product-lg-component">
+					<div class="product-lg-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-lg-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-lg-component__rating">
+							<div class="product-lg-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-lg-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-lg-component__price">
+							<p class="product-lg-component__price__last">
+								<span>Antes: </span><span class="product-lg-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-lg-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-lg-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-lg-component">
+					<div class="product-lg-component__image">
+						<img src="img/producto2.png" alt="foto del producto" />
+					</div>
+					<div class="product-lg-component__content">
+						<h3>
+							Silla Granada Asiento Y Respaldo Polipropileno Blanco Durex
+						</h3>
+						<div class="product-lg-component__rating">
+							<div class="product-lg-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-lg-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-lg-component__price">
+							<p class="product-lg-component__price__last">
+								<span>Antes: </span><span class="product-lg-component__price__last__value">$1'299</span>
+							</p>
+							<h2 class="product-lg-component__price__current">$1'185</h2>
+						</div>
+						<div class="product-lg-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-lg-component">
+					<div class="product-lg-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-lg-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-lg-component__rating">
+							<div class="product-lg-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-lg-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-lg-component__price">
+							<p class="product-lg-component__price__last">
+								<span>Antes: </span><span class="product-lg-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-lg-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-lg-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-lg-component">
+					<div class="product-lg-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-lg-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-lg-component__rating">
+							<div class="product-lg-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-lg-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-lg-component__price">
+							<p class="product-lg-component__price__last">
+								<span>Antes: </span><span class="product-lg-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-lg-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-lg-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="for-you">
+			<div class="section-header">
+				<h3>Recomendado para tí</h3>
+				<div class="section-header__right-option"></div>
+			</div>
+			<div class="component products-md-component">
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+				<div class="component product-md-component">
+					<div class="product-md-component__image">
+						<img src="img/producto1.png" alt="foto del producto" />
+					</div>
+					<div class="product-md-component__content">
+						<h3>
+							Huawei Matebook D 14 R7, Amd Ryzen 7,512 Gb + 8 Gb Ram, Gris
+						</h3>
+						<div class="product-md-component__rating">
+							<div class="product-md-component__rating__stars">
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-filled.svg" alt="star filled" />
+								<img src="icon/ant-design_star-unfilled.svg" alt="star unfilled" />
+							</div>
+							<p class="product-md-component__rating__count">20 opiniones</p>
+						</div>
+						<div class="product-md-component__price">
+							<p class="product-md-component__price__last">
+								<span>Antes: </span><span class="product-md-component__price__last__value">$19'999</span>
+							</p>
+							<h2 class="product-md-component__price__current">$17'999</h2>
+						</div>
+						<div class="product-md-component__add-to-cart">
+							<p>Agregar</p>
+							<img src="icon/add_to_cart_plus_icon.svg" alt="agregar al carrito" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="load-more">
+				<button class="load-more-btn">Cargar más elementos</button>
+			</div>
+		</section>
+		<section id="reliability" class="component reliability-component">
+			<div class="component a-tu-favor-component">
+				<div class="a-tu-favor-component__background-image">
+					<img src="icon/clarity_shield-line.svg" aria-hidden="true" />
+				</div>
+				<div class="a-tu-favor-component__image">
+					<img src="img/100-a-tu-favor.svg" alt="cien por ciento a tu favor" />
+				</div>
+				<p class="a-tu-favor-component__text">
+					Nuestra política de devoluciones y reembolsos te proteje de cualquier imprevisto.<br />
+					<b>Te devolvemos el 100% de tu dinero.</b>
+				</p>
+			</div>
+			<div class="component porque-confiar-component">
+				<h3>¿Porqué confiar en nosotros?</h3>
+				<div class="porque-confiar-component__group-list">
+					<h4>Protegemos tus datos</h4>
+					<ul>
+						<li>Contamos con certificado SSL.</li>
+						<li>Fuertes estándares de seguridad.</li>
+						<li>Cumplimos con todas las normas vigentes.</li>
+					</ul>
+				</div>
+				<div class="porque-confiar-component__group-list">
+					<h4>Tu decides cómo pagar</h4>
+					<ul>
+						<li>Tarjeta de crédito y débito.</li>
+						<li>Transferencia bancaria SPEI.</li>
+						<li>Pagos en efectivo con OXXO Pay.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-separator"></div>
+		<div class="footer-content">
+			<div class="footer-logo">
+				<img src="img/logotipo.svg" alt="Logo de Ofera Shop" />
+			</div>
+			<div class="footer-links-group-component">
+				<div class="footer-links-group-component__group">
+					<h4>Conócenos</h4>
+					<ul>
+						<li><a href="#">Información corporativa</a></li>
+						<li><a href="#">Información de prensa</a></li>
+						<li><a href="#">Trabaja con nosotros</a></li>
+					</ul>
+				</div>
+				<div class="footer-links-group-component__group">
+					<h4>Gana dinero</h4>
+					<ul>
+						<li><a href="#">Vendedores</a></li>
+						<li><a href="#">Afiliados</a></li>
+						<li><a href="#">Anunciar productos</a></li>
+					</ul>
+				</div>
+				<div class="footer-links-group-component__group">
+					<h4>Podemos ayudarte</h4>
+					<ul>
+						<li><a href="#">Política sobre el COVID-19</a></li>
+						<li><a href="#">Devoluciones y reemplazos</a></li>
+						<li><a href="#">Ayuda</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-end-component">
+				<div class="footer-end-component__legal">
+					<a href="#">Aviso de privacidad</a>
+					<a href="#">Términos y condiciones</a>
+				</div>
+				<div class="footer-end-component__copyright">
+					© 2021 Todos los derechos reservados.
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Galano Grotesque';
+  src: url('fonts/galano-grotesque/Galano Grotesque Alt.otf');
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Bold';
+  src: url('fonts/galano-grotesque/Galano Grotesque Alt Bold.otf');
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBold';
+  src: url('fonts/galano-grotesque/Galano Grotesque Alt Semi Bold.otf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/open-sans/Open-Sans-Regular.ttf');
+}

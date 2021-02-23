@@ -1,0 +1,126 @@
+.location-component {
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 4px;
+	padding: 14px 0;
+}
+
+.only-desktop .location-component {
+	display: none;
+}
+
+.location-component__icon {
+	display: inline-flex;
+	height: 18px;
+}
+
+.location-dropdown-component {
+	position: relative;
+	display: inline-block;
+}
+
+.location-dropdown-component__selected {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 6px;
+}
+
+.location-dropdown-component__options-container {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 16px;
+	padding: 16px 8px;
+	color: var(--color-morado);
+	background-color: white;
+	border: 1px solid var(--color-gris-claro);
+	border-radius: 8px;
+}
+
+.location-dropdown-component__options-container h4 {
+	padding: 8px 16px;
+	font-size: 16px;
+	font-family: 'Galano Grotesque Bold'
+}
+
+.location-dropdown-component__options {
+}
+
+.location-dropdown-component__options li {
+	width: auto;
+	padding: 8px 16px;
+	box-sizing: border-box;
+}
+
+.location-dropdown-component__options li:hover {
+	background-color: var(--color-gris-claro);
+}
+
+.location-dropdown-component__options li p {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 16px;
+}
+
+@media screen and (min-width: 760px) {
+	.location-component {
+		/* visibility: hidden; */
+		width: 120px;
+		padding: 0 16px;
+	}
+
+	.only-desktop .location-component  {
+		display: flex;
+		column-gap: 8px;
+		justify-content: inherit;
+		width: auto;
+		padding: 0;
+		margin-left: 16px;
+	}
+
+	.location-component__icon {
+		height: 40px;
+	}
+
+	.location-dropdown-component {
+		display: inline-flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	
+	.location-dropdown-component p, b {
+		/* font-size: 10px; */
+	}
+
+	.location-dropdown-component span {
+		display: block;
+		width: auto;
+		line-height: 1.24;
+	}
+
+	.location-dropdown-component__options-container {
+		z-index: 200;
+		margin-top: 50px;
+		display: none;
+		flex-direction: column;
+	}
+
+	.only-desktop {
+		visibility: inherit;
+		display: inherit;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.only-desktop .location-component {
+		margin-left: 32px;
+		column-gap: 8px;
+	}
+
+	.location-component__icon {
+		height: 60px;
+	}
+}

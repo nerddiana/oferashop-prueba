@@ -1,0 +1,43 @@
+@import 'components/category-component.css';
+
+#categories {
+	padding: 0 24px;
+	margin: 0 auto;
+	max-width: 1293px;
+	box-sizing: border-box;
+}
+
+.categories-component {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	/* grid-column-gap: 8px; */
+	grid-row-gap: 24px;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 440px) {
+	.categories-component {
+		grid-column-gap: 24px;
+	}
+}
+
+@media screen and (min-width: 560px) {
+	.categories-component {
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 16px;
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.categories-component {
+		grid-column-gap: 20px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.categories-component {
+		grid-template-columns: repeat(10, 1fr);
+		grid-column-gap: 16px;
+	}
+}
